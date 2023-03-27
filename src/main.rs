@@ -12,7 +12,7 @@ enum Route {
 fn switch(route: Route) -> Html {
 	match route {
 		Route::Root => html!{
-			<Link<Route> to={Route::Search { query: "foo bar baz".into() }}>
+			<Link<Route> to={Route::Search { query: "foo/bar/baz".into() }}>
 				{"Do search!"}
 			</Link<Route>>
 		},
